@@ -1,0 +1,39 @@
+/* .oneButton{
+    color:aqua !important;
+}
+
+.App {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 100%;
+    width: fit-content;
+}
+
+.logo {
+    height: 25vh;
+    pointer-events: none;
+} */
+
+#characterContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.characterContainer{
+    margin-bottom: 20vh;
+    background-color: rgb(66,180,202,0.5);
+    padding: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 5%;
+    background-color: 0.5;
+}
+
+button{
+    background-color: black;
+    border-color: #42b4ca;
+    color: #42b4ca;
+}
+

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import AllCharacters from './components/allCharacters/AllCharacters';
+import OneCharacter from './components/oneCharacter/OneCharacter';
+import RickAndMortyLogo from './RickAndMortyLogo.png'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={RickAndMortyLogo} alt='Logo Rick and morty' className='logo'/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<AllCharacters/>}></Route>
+          <Route path='/character/:id' element={<OneCharacter/>}></Route>
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }

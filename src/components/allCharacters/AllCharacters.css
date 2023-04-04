@@ -1,0 +1,14 @@
+.characterImg{
+    border-radius: 5%;
+    border: solid #bfde42 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #97b130e0;
+}
+
+p{
+    padding-bottom: 2em;
+    font-size: larger;
+}
